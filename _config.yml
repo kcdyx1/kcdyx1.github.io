@@ -99,8 +99,8 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "全球技术地图",
+        href: "http://globaltechmap.com"
     },{
         title: "简书",
         href: "http://www.jianshu.com/u/e71990ada2fd"

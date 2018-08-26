@@ -1,7 +1,7 @@
 # Site settings
 title: IITE 动态导航
 SEOTitle: 科技前沿 | For IITE
-header-img: img/home-bg-art.jpg
+header-img: img/home-bg-xg.jpg
 email: kcdyx1@hotmail.com
 description: "从这里看到世界！"
 keyword: "kcdyx1"
@@ -101,5 +101,9 @@ friends: [
     {
         title: "全球技术地图",
         href: "http://globaltechmap.com"
+    },
+    {
+        title: "上传网站",
+        href: "http://globaltechmap.com/user/login?__refer__=%2Fdocument%2Fedit"
     }
 ]

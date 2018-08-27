@@ -18,12 +18,12 @@ sidebar-avatar: /img/home-qr.png      # use absolute URL, seeing it's used in bo
 
 # SNS settings
 RSS: true
-weibo_username:     kcdyx1
+# weibo_username:     kcdyx1
 zhihu_username:     kcdyx1
 github_username:    kcdyx1
-facebook_username:  kcdyx1
-jianshu_username:   kcdyx1
-twitter_username:   kcdyx1
+# facebook_username:  kcdyx1
+# jianshu_username:   kcdyx1
+# twitter_username:   kcdyx1
 
 
 

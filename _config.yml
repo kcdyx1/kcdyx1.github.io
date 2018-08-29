@@ -12,7 +12,7 @@ github_repo: "https://github.com/kcdyx1/kcdyx1.github.io.git" # you code reposit
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "尽览全球科技资讯!"
-sidebar-avatar: /img/home-qr.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar_g.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

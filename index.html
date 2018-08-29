@@ -51,15 +51,9 @@ description: "从这里看到整个世界！"
             {{ post.subtitle }}
         </h3>
         {% endif %}
-        <!-- <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
-        </div> -->
     </a>
-    <!-- <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p> -->
 </div>
-<hr>
+<hr> 
 {% endfor %}
 
 <!-- Pager -->
@@ -78,5 +72,5 @@ description: "从这里看到整个世界！"
 </ul>
 {% endif %}
 
-<script src="{{ " /js/1534993777.js " | prepend: site.baseurl }}"></script>
+<!-- <script src="{{ " /js/1534993777.js " | prepend: site.baseurl }}"></script> -->
 

@@ -103,7 +103,7 @@ friends: [
         href: "http://globaltechmap.com"
     },
     {
-        title: "上传网站",
-        href: "http://globaltechmap.com/user/login?__refer__=%2Fdocument%2Fedit"
+        title: "每日动态上传",
+        href: "http://globaltechmap.com/document/edit"
     }
 ]

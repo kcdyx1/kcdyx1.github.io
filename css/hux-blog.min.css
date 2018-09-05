@@ -207,11 +207,16 @@ blockquote {
     color: gray;
     font-style: normal;
     font-size: .95em;
-    margin: 20px 0 20px
+    margin: 5px 0 5px
 }
 
 blockquote p {
+    display: none;
     margin: 0
+}
+
+blockquote:hover p {
+    display: block;
 }
 
 small.img-hint {

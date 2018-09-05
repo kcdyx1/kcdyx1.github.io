@@ -71,6 +71,7 @@ for key, value in gzh_dict.items():
         file_add_write(hypelink)
         file_add_write(jianjie)
 
+file_add_write('\n')
 file_add_write('------\n' + '\n')
 file_add_write('欢迎推荐更多信息源 [kcdyx1@hotmail.com](mailto:kcdyx1@hotmail.com)')
 print(nowTime + '微信公众号链接已更新，enjoy！:P')

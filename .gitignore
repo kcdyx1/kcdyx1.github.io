@@ -2,3 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 _posts/weixintemp.txt
+.DS_Store
+.git
+.vscode

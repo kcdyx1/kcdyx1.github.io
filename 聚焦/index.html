@@ -1,0 +1,39 @@
+---
+title: 聚焦
+layout: page
+description: "从这里看到整个世界！"
+---
+
+
+<div class="post-preview hidden-sm hidden-xs">
+  
+</div>
+
+
+<div class="post-preview">
+<a href="{{ site.baseurl }}/聚焦/trump.html">
+        <h2 class="post-title">
+            特朗普支持率
+        </h2>
+    </a>
+</div>
+<hr> 
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+
+<!-- <script src="{{ " /js/1534993777.js " | prepend: site.baseurl }}"></script> -->
+

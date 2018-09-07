@@ -1,6 +1,6 @@
 ---
 title: 聚焦
-layout: page
+layout: default
 description: "从这里看到整个世界！"
 ---
 <style>
@@ -9,33 +9,96 @@ description: "从这里看到整个世界！"
         height: auto;
     }
 </style>
-<div class="post-preview">
-    <a href="{{ site.baseurl }}/聚焦/trump.html">
-        <h2 class="post-title">
-            特朗普支持率
-        </h2>
-        <h3 class="post-subtitle">
-            由Nate Silver及其团队制作发表
-        </h3>
-        <img src="/聚焦/img/trumpapp.jpg" class="img-thumbnail slt" alt="Image">
-    </a>
+<header class="intro-header" style="background-image: url('/img/home-bg-art.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>聚焦</h1>
+                    <hr class="small">
+                    <span class="subheading">新鲜直达！</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
+
+            <div class="post-preview">
+                <a href="{{ site.baseurl }}/聚焦/trump.html">
+                    <h2 class="post-title">
+                        特朗普支持率
+                    </h2>
+                    <h3 class="post-subtitle">
+                        由Nate Silver及其团队制作发表
+                    </h3>
+                    <img src="/聚焦/img/trumpapp.jpg" class="img-thumbnail slt" alt="Image">
+                </a>
+            </div>
+            <hr>
+
+            <!-- Pager -->
+            {% if paginator.total_pages > 1 %}
+            <ul class="pager">
+                {% if paginator.previous_page %}
+                <li class="previous">
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+                        Newer
+                        Posts</a>
+                </li>
+                {% endif %}
+                {% if paginator.next_page %}
+                <li class="next">
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts
+                        &rarr;</a>
+                </li>
+                {% endif %}
+            </ul>
+            {% endif %}
+        </div>
+
+        <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+
+            <!-- Short About -->
+            <section class="visible-md visible-lg">
+                <hr>
+                <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+                <div class="short-about">
+                    {% if site.sidebar-avatar %}
+                    <a href="{{ site.baseurl }}/about">
+                        <img src="{{site.sidebar-avatar}}" />
+                    </a>
+                    {% endif %}
+                    {% if site.sidebar-about-description %}
+                    <p>{{site.sidebar-about-description}}</p>
+                    {% endif %}
+                    
+                </div>
+            </section>
+            <!-- Friends Blog -->
+            {% if site.friends %}
+            <hr>
+            <h5>FRIENDS</h5>
+            <ul class="list-inline">
+                {% for friend in site.friends %}
+                <li><a target="_blank" href="{{friend.href}}">{{friend.title}}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+
+
 </div>
-<hr>
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
-
-<!-- <script src="{{ " /js/1534993777.js " | prepend: site.baseurl }}"></script> -->

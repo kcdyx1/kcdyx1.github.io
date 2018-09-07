@@ -5,7 +5,7 @@ description: "从这里看到整个世界！"
 ---
 <style>
     img.slt {
-        max-width: 50%;
+        max-width: 300px;
         height: auto;
     }
 </style>
@@ -73,28 +73,6 @@ description: "从这里看到整个世界！"
             {% endif %}
         </div>
 
-        <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
-
-            <!-- Short About -->
-            <section class="visible-md visible-lg">
-                <hr>
-                <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
-                <div class="short-about">
-                    {% if site.sidebar-avatar %}
-                    <a href="{{ site.baseurl }}/about">
-                        <img src="{{site.sidebar-avatar}}" />
-                    </a>
-
-                </div>
-            </section>
-        </div>
-        {% endif %}
     </div>
 
 

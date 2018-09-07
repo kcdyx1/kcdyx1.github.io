@@ -9,7 +9,7 @@ description: "从这里看到整个世界！"
         height: auto;
     }
 </style>
-<header class="intro-header" style="background-image: url('/img/home-bg-art.jpg')">
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -26,21 +26,32 @@ description: "从这里看到整个世界！"
 <!-- Main Content -->
 
 <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
-
-            <div class="post-preview">
-                <a href="{{ site.baseurl }}/聚焦/trump.html">
-                    <h2 class="post-title">
-                        特朗普支持率
-                    </h2>
-                    <h3 class="post-subtitle">
-                        由Nate Silver及其团队制作发表
-                    </h3>
-                    <img src="/聚焦/img/trumpapp.jpg" class="img-thumbnail slt" alt="Image">
-                </a>
-            </div>
-            <hr>
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
+        <div class="post-preview">
+            <a href="/聚焦/house2018.html">
+                <h2 class="post-title">
+                    2018国会选举形势
+                </h2>
+                <h3 class="post-subtitle">
+                    由Nate Silver及其团队制作发表
+                </h3>
+                <img src="/聚焦/img/house2018.jpg" class="img-thumbnail slt" alt="Image">
+            </a>
+        </div>
+        <hr>
+        <div class="post-preview">
+            <a href="{{ site.baseurl }}/聚焦/trump.html">
+                <h2 class="post-title">
+                    特朗普支持率
+                </h2>
+                <h3 class="post-subtitle">
+                    由Nate Silver及其团队制作发表
+                </h3>
+                <img src="/聚焦/img/trumpapp.jpg" class="img-thumbnail slt" alt="Image">
+            </a>
+        </div>
+        <hr>
 
             <!-- Pager -->
             {% if paginator.total_pages > 1 %}
@@ -79,23 +90,9 @@ description: "从这里看到整个世界！"
                     <a href="{{ site.baseurl }}/about">
                         <img src="{{site.sidebar-avatar}}" />
                     </a>
-                    {% endif %}
-                    {% if site.sidebar-about-description %}
-                    <p>{{site.sidebar-about-description}}</p>
-                    {% endif %}
-                    
+
                 </div>
             </section>
-            <!-- Friends Blog -->
-            {% if site.friends %}
-            <hr>
-            <h5>FRIENDS</h5>
-            <ul class="list-inline">
-                {% for friend in site.friends %}
-                <li><a target="_blank" href="{{friend.href}}">{{friend.title}}</a></li>
-                {% endfor %}
-            </ul>
-            {% endif %}
         </div>
         {% endif %}
     </div>

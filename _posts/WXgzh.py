@@ -3,6 +3,7 @@ import datetime
 
 nowTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 # 获取运行时间
+print("微信公众号链接获取程序已启动--->")
 
 with open('weixintemp.txt', 'r', encoding="utf-8") as f:
     # 读取文件头部

@@ -69,14 +69,17 @@ for key, value in gzh_dict.items():
     title = "\n#### " + key + '\n'
     file_add_write(title + '\n')
     for gzhk, gzhv in value.items():
-        gzh_id = gzhk
-        gzh_url = gzhv['profile_url']
-        gzh_intro = gzhv['introduction']
-        hypelink = '- [' + gzh_id + \
-            '](' + gzh_url + '){:target="_blank"}' + '\n'
-        jianjie = '\t>简介：' + gzh_intro + '\n'
-        file_add_write(hypelink)
-        file_add_write(jianjie)
+        if gzhv:
+            gzh_id = gzhk
+            gzh_url = gzhv['profile_url']
+            gzh_intro = gzhv['introduction']
+            hypelink = '- [' + gzh_id + \
+                '](' + gzh_url + '){:target="_blank"}' + '\n'
+            jianjie = '\t>简介：' + gzh_intro + '\n'
+            file_add_write(hypelink)
+            file_add_write(jianjie)
+        else:
+            continue
 
 file_add_write('\n')
 file_add_write('------\n' + '\n')

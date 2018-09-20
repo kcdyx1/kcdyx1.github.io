@@ -28,7 +28,7 @@ def list_get():    # 创建公众号名称去重列表
 
 def ChuShiHua(shijian):
     print("微信公众号链接获取程序已启动--->")
-    with open(dir + '/_postsweixintemp.txt', 'r', encoding="utf-8") as f:
+    with open(dir + '/_posts/weixintemp.txt', 'r', encoding="utf-8") as f:
         # 读取文件头部
         lines = f.readlines()
         lines.append('\n微信公众号链接更新于：' + shijian + '\n')

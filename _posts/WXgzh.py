@@ -88,7 +88,8 @@ def result_save(gzhlist):
 
 
 def main():
-    kaishi = input("你想干啥？\n------>按 1 更新微信公众号链接并推送；\n------>按 2 只推送所有更新项目。\n你说吧：")
+    kaishi = input(
+        "你想干啥？\n------>按 1 更新微信公众号链接并推送；\n------>按 2 只推送所有更新项目。\n你说吧：")
     if kaishi == '1':
         all_gzh_list = list_get()
         nowTime = get_time()
@@ -101,11 +102,10 @@ def main():
     if kaishi == '2':
         nowTime = get_time()
         os.system('iite')
-        print(nowTime + '所有更新已经推送至github，enjoy！')
+        print('\n\n' + nowTime + '所有更新已经推送至github，enjoy！')
     else:
         print("输错啦，你个沙雕！")
         main()
-
 
 
 if __name__ == '__main__':

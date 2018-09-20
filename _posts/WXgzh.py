@@ -87,22 +87,32 @@ def result_save(gzhlist):
     file_add_write('欢迎推荐更多信息源 [kcdyx1@hotmail.com](mailto:kcdyx1@hotmail.com)')
 
 
+def gengxin():
+    all_gzh_list = list_get()
+    nowTime = get_time()
+    ChuShiHua(nowTime)
+    result_save(all_gzh_list)
+    nowTime = get_time()
+    print(nowTime + '微信公众号链接已更新到文件！')
+    os.system('iite')
+    print(nowTime + '所有更新已经推送至github，enjoy！')
+
+
+def gitpush():
+    nowTime = get_time()
+    os.system('iite')
+    print(nowTime + '所有更新已经推送至github，enjoy！')
+
+
 def main():
     kaishi = input(
         "你想干啥？\n------>按 1 更新微信公众号链接并推送；\n------>按 2 只推送所有更新项目。\n你说吧：")
     if kaishi == '1':
-        all_gzh_list = list_get()
-        nowTime = get_time()
-        ChuShiHua(nowTime)
-        result_save(all_gzh_list)
-        nowTime = get_time()
-        print(nowTime + '微信公众号链接已更新到文件！')
-        os.system('iite')
-        print(nowTime + '所有更新已经推送至github，enjoy！')
+        print("你选择了" + kaishi + '\n')
+        gengxin()
     if kaishi == '2':
-        nowTime = get_time()
-        os.system('iite')
-        print('\n\n' + nowTime + '所有更新已经推送至github，enjoy！')
+        print("你选择了" + kaishi + '\n')
+        gitpush()
     else:
         print("输错啦，你个沙雕！")
         main()

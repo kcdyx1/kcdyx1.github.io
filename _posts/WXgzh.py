@@ -23,6 +23,7 @@ def list_get():    # 创建公众号名称去重列表
         for i in v.keys():
             if i not in chuan_gzh_list:
                 chuan_gzh_list.append(i)
+    print('公众号列表已生成！\n')
     return chuan_gzh_list
 
 
@@ -36,6 +37,7 @@ def ChuShiHua(shijian):
         # 写入文件头部
         for line in lines:
             f_w.write(line)
+    print('2018-08-22-微信公众号.md文件初始化完成！\n')
 
 
 
@@ -63,6 +65,7 @@ def result_save(gzhlist):
     result_dict = {}
     for n in gzhlist:
         result_dict[n] = get_gzh_xx(n)
+    print('公众号链接获取完毕！\n')
     for ly_v in gzh_dict.values():
         for gzh_k, gzh_v in ly_v.items():
             ly_v[gzh_k] = result_dict[gzh_k]
@@ -100,6 +103,7 @@ def gengxin():
 
 
 def gitpush():
+    print('开始推送最新内容到github ------> \n')
     nowTime = get_time()
     os.system('iite')
     print(nowTime + '所有更新已经推送至github，enjoy！')

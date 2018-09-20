@@ -1,6 +1,15 @@
+# !/Users/kangchen/anaconda3/bin/python
+# -*- coding: utf-8 -*-
+# author@康宸 find me https://github.com/kcdyx1
+
+import os
 import wechatsogou
 import datetime
 from gzh_dict import *
+# from git import Repo
+
+dir = "/Users/kangchen/kcdyx1.github.io"
+
 
 def list_get():    # 创建公众号名称去重列表
     chuan_gzh_list = []
@@ -15,11 +24,11 @@ def ChuShiHua():
     # 获取运行时间
     Time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     print("微信公众号链接获取程序已启动--->")
-    with open('./weixintemp.txt', 'r', encoding="utf-8") as f:
+    with open(dir + '/_postsweixintemp.txt', 'r', encoding="utf-8") as f:
         # 读取文件头部
         lines = f.readlines()
         lines.append('\n微信公众号链接更新于：' + Time + '\n')
-    with open("2018-08-22-微信公众号.md", "w", encoding="utf-8") as f_w:
+    with open(dir + "/_posts/2018-08-22-微信公众号.md", "w", encoding="utf-8") as f_w:
         # 写入文件头部
         for line in lines:
             f_w.write(line)
@@ -42,7 +51,7 @@ def get_gzh_xx(gzh_name):
 
 def file_add_write(nr):
     # 文件追加写入内容
-    with open("2018-08-22-微信公众号.md", "a", encoding="utf-8") as f_w:
+    with open(dir + "/_posts/2018-08-22-微信公众号.md", "a", encoding="utf-8") as f_w:
         f_w.write(nr)
 
 
@@ -75,11 +84,17 @@ def result_save(gzhlist):
     file_add_write('欢迎推荐更多信息源 [kcdyx1@hotmail.com](mailto:kcdyx1@hotmail.com)')
 
 
+# def git_push():
+#     repo = Repo(dir)
+#     print(repo.active_branch)
+
+
 def main():
-    all_gzh_list = list_get()
-    nowTime = ChuShiHua()
-    result_save(all_gzh_list)
-    print(nowTime + '微信公众号链接已更新，enjoy！:P')
+    # all_gzh_list = list_get()
+    # nowTime = ChuShiHua()
+    # result_save(all_gzh_list)
+    # print(nowTime + '微信公众号链接已更新，enjoy！:P')
+    os.system('iite')
 
 
 if __name__ == '__main__':

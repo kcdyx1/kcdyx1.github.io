@@ -13,12 +13,27 @@ const CACHE_NAMESPACE = 'main-'
 
 const CACHE = CACHE_NAMESPACE + 'precache-then-runtime';
 const PRECACHE_LIST = [
-    "./img",
-    "./css",
-    "./js",
+    "./img/favicon.ico",    
+    "./img/home-bg-xg.jpg",    
+    "./img/post-bg-zk.jpg",    
+    "./img/post-bg-xx.jpg",    
+    "./img/post-bg-xjzz.jpg",    
+    "./img/post-bg-wx.jpg",    
+    "./img/post-bg-sw.jpg",    
+    "./img/post-bg-universe.jpg",    
+    "./img/post-bg-hacker.jpg",    
+    "./img/post-bg-hy.jpg",    
+    "./img/home-qr.png",      
+    "./css/bootstrap.min.css",      
+    "./css/hux-blog.min.css",      
+    "./css/syntax.css",      
+    "./js/bootstrap.min.js",      
+    "./js/hux-blog.min.js",      
+    "./js/jquery.min.js",      
+    "./js/jquery.nav.js",      
+    "./js/jquery.tagcloud.js",      
     "./offline.html",
-    "./index.html",
-    "./聚焦"
+    "./index.html"
 ]
 const HOSTNAME_WHITELIST = [
     self.location.hostname,

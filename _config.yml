@@ -5,7 +5,7 @@ header-img: img/home-bg-xg.jpg
 email: kcdyx1@hotmail.com
 description: "跟踪全球科技前沿动态!"
 keyword: "科技前沿, 科技, 科技战略, 微信公众号, 大数据, 信息聚合" 
-url: "http://kcdyx1.github.io"          # your host, for absolute URL
+url: "https://kcdyx1.github.io"          # your host, for absolute URL
 github_repo: "https://github.com/kcdyx1/kcdyx1.github.io.git" # you code repository
 
 # Sidebar settings

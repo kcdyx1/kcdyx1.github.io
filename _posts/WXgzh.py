@@ -11,6 +11,12 @@ from gzh_dict import *
 dir = "/Users/kangchen/kcdyx1.github.io"
 
 
+def get_time():
+    # 获取运行时间
+    Time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    return Time
+
+
 def list_get():    # 创建公众号名称去重列表
     chuan_gzh_list = []
     for v in gzh_dict.values():
@@ -20,19 +26,16 @@ def list_get():    # 创建公众号名称去重列表
     return chuan_gzh_list
 
 
-def ChuShiHua():
-    # 获取运行时间
-    Time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+def ChuShiHua(shijian):
     print("微信公众号链接获取程序已启动--->")
     with open(dir + '/_postsweixintemp.txt', 'r', encoding="utf-8") as f:
         # 读取文件头部
         lines = f.readlines()
-        lines.append('\n微信公众号链接更新于：' + Time + '\n')
+        lines.append('\n微信公众号链接更新于：' + shijian + '\n')
     with open(dir + "/_posts/2018-08-22-微信公众号.md", "w", encoding="utf-8") as f_w:
         # 写入文件头部
         for line in lines:
             f_w.write(line)
-    return Time
 
 
 
@@ -84,17 +87,24 @@ def result_save(gzhlist):
     file_add_write('欢迎推荐更多信息源 [kcdyx1@hotmail.com](mailto:kcdyx1@hotmail.com)')
 
 
-# def git_push():
-#     repo = Repo(dir)
-#     print(repo.active_branch)
-
-
 def main():
-    # all_gzh_list = list_get()
-    # nowTime = ChuShiHua()
-    # result_save(all_gzh_list)
-    # print(nowTime + '微信公众号链接已更新，enjoy！:P')
-    os.system('iite')
+    kaishi = input("你想干啥？\n------>按 1 更新微信公众号链接并推送；\n------>按 2 只推送所有更新项目。\n你说吧：")
+    if kaishi == '1':
+        all_gzh_list = list_get()
+        nowTime = get_time()
+        ChuShiHua(nowTime)
+        result_save(all_gzh_list)
+        nowTime = get_time()
+        print(nowTime + '微信公众号链接已更新到文件！')
+        os.system('iite')
+        print(nowTime + '所有更新已经推送至github，enjoy！')
+    if kaishi == '2':
+        os.system('iite')
+        print(nowTime + '所有更新已经推送至github，enjoy！')
+    else:
+        print("输错啦，你个沙雕！")
+        main()
+
 
 
 if __name__ == '__main__':

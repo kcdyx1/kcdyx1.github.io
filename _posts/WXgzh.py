@@ -122,7 +122,7 @@ def main():
     if kaishi == 'q':
         print("再见了老铁！")
     else:
-        print("输错啦，你个沙雕！")
+        print("\n输错啦，你个沙雕！\n重来！！！\n")
         main()
 
 

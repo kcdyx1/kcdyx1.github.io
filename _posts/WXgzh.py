@@ -96,12 +96,14 @@ def gengxin():
     print(nowTime + '微信公众号链接已更新到文件！')
     os.system('iite')
     print(nowTime + '所有更新已经推送至github，enjoy！')
+    exit()
 
 
 def gitpush():
     nowTime = get_time()
     os.system('iite')
     print(nowTime + '所有更新已经推送至github，enjoy！')
+    exit()
 
 
 def main():

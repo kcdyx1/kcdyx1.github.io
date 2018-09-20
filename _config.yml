@@ -1,17 +1,16 @@
 # Site settings
-title: 科技前沿 | IITE Info
-SEOTitle: 科技前沿 科技跟踪 战略
+title: SciTech Frontier
+SEOTitle: 科技前沿跟踪 | For IITE
 header-img: img/home-bg-xg.jpg
 email: kcdyx1@hotmail.com
-description: "从这里看到世界！"
+description: "跟踪全球科技前沿动态!"
 keyword: "科技前沿, 科技, 科技战略, 微信公众号, 大数据, 信息聚合" 
 url: "http://kcdyx1.github.io"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/kcdyx1/kcdyx1.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "尽览全球科技资讯!"
+sidebar-about-description: "欢迎关注-全球技术地图"
 sidebar-avatar: /img/home-qr.png     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

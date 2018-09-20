@@ -99,6 +99,7 @@ def main():
         os.system('iite')
         print(nowTime + '所有更新已经推送至github，enjoy！')
     if kaishi == '2':
+        nowTime = get_time()
         os.system('iite')
         print(nowTime + '所有更新已经推送至github，enjoy！')
     else:

@@ -106,13 +106,15 @@ def gitpush():
 
 def main():
     kaishi = input(
-        "你想干啥？\n------>按 1 更新微信公众号链接并推送；\n------>按 2 只推送所有更新项目。\n你说吧：")
+        "你想干啥？\n------>按 1 更新微信公众号链接并推送；\n------>按 2 只推送所有更新项目;\n------>按 q 滚远点！\n你说吧：")
     if kaishi == '1':
         print("你选择了" + kaishi + '\n')
         gengxin()
     if kaishi == '2':
         print("你选择了" + kaishi + '\n')
         gitpush()
+    if kaishi == 'q':
+        print("再见了老铁！")
     else:
         print("输错啦，你个沙雕！")
         main()

@@ -1,6 +1,6 @@
 {
   "name": "IITE SciTech",
-  "short_name": "IITE SciTech",
+  "short_name": "IITE",
   "description": "Homepage for IITEer",
   "icons": [{
     "src": "icons/pwa_icon_128.png",

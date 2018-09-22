@@ -4,6 +4,7 @@
  * Copyright 2016 @huxpro
  * Licensed under Apache 2.0
  * service worker scripting
+ * modify by KC 2018
  * ========================================================== */
 
 // CACHE_NAMESPACE

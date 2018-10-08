@@ -47,7 +47,7 @@ var createSnackbar = (function () {
       if (previous === this) {
         previous.dismiss();
       }
-    }.bind(snackbar), duration || 5000);
+    }.bind(snackbar), duration || 10000);
 
     snackbar.addEventListener('transitionend', function (event, elapsed) {
       if (event.propertyName === 'opacity' && this.style.opacity == 0) {

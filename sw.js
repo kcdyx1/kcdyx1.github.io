@@ -29,12 +29,14 @@ const PRECACHE_LIST = [
     "./聚焦/img/trumpapp.jpg",         
     "./css/bootstrap.min.css",      
     "./css/hux-blog.min.css",      
-    "./css/syntax.css",      
+    "./css/syntax.css",
+    "./css/font-awesome.min.css", 
     "./js/bootstrap.min.js",      
     "./js/hux-blog.min.js",      
     "./js/jquery.min.js",      
     "./js/jquery.nav.js",      
-    "./js/jquery.tagcloud.js",      
+    "./js/jquery.tagcloud.js",
+    "./js/snackbar.js",      
     "./offline.html",
     "./index.html"
 ]

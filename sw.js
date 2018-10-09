@@ -30,7 +30,6 @@ const PRECACHE_LIST = [
     "./css/bootstrap.min.css",      
     "./css/hux-blog.min.css",      
     "./css/syntax.css",
-    "./css/font-awesome.min.css", 
     "./js/bootstrap.min.js",      
     "./js/hux-blog.min.js",      
     "./js/jquery.min.js",      

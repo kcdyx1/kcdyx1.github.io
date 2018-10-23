@@ -14,6 +14,7 @@ const CACHE_NAMESPACE = 'main-'
 
 const CACHE = CACHE_NAMESPACE + 'precache-then-runtime';
 const PRECACHE_LIST = [
+    "./img/404-bg.jpg",
     "./img/favicon.ico",    
     "./img/home-bg-xg.jpg",    
     "./img/post-bg-zk.jpg",    

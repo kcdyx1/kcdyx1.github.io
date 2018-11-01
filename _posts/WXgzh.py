@@ -105,7 +105,7 @@ def gengxin():
 def gitpush():
     print('开始推送最新内容到github ------> \n')
     nowTime = get_time()
-    os.system('iite')
+    os.system('iite & gpom')
     print(nowTime + '所有更新已经推送至github，enjoy！')
     exit()
 

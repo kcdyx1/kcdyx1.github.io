@@ -40,7 +40,6 @@ def ChuShiHua(shijian):
     print('2018-08-22-微信公众号.md文件初始化完成！\n')
 
 
-
 # 初始化搜狗微信API
 ws_api = wechatsogou.WechatSogouAPI(captcha_break_time=3)
 

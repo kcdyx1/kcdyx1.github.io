@@ -1,11 +1,11 @@
 # Site settings
 title: SciTech Frontier
-SEOTitle: 科技前沿跟踪 | For IITE
+SEOTitle: 科技前沿跟踪
 header-img: img/home-bg-xg.jpg
-author: DRC_IITE_KangChen
+author: KangChen
 email: kcdyx1@hotmail.com
 description: "跟踪全球科技前沿动态!"
-keyword: "科技前沿, 科技, 科技战略, 微信公众号, 大数据, 信息聚合" 
+keyword: "科技前沿, 科技, 科技战略, 区块链，大数据, 信息聚合" 
 url: "https://kcdyx1.github.io"          # your host, for absolute URL
 github_repo: "https://github.com/kcdyx1/kcdyx1.github.io.git" # you code repository
 
@@ -100,9 +100,5 @@ friends: [
     {
         title: "全球技术地图",
         href: "http://globaltechmap.com"
-    },
-    {
-        title: "每日动态上传",
-        href: "http://globaltechmap.com/document/edit"
     }
 ]
